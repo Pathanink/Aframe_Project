@@ -64,7 +64,7 @@
     <a-scene cursor="rayOrigin: mouse">
         <a-entity environment="preset: japan;"></a-entity>
 
-        <a-text value="Hello Welcome to Japan"
+        <a-text value="Welcome to Japan"
         position="0.5 9 -1"
         color="#FFF"
         scale="5 5 5"
@@ -73,27 +73,141 @@
         animation="property: position; to: 0.5 9.5 -1; dir: alternate; dur: 3000; loop: true; easing: easeInOutSine">
         </a-text>   
         
+        <a-entity gltf-model="material/Can Fridge.glb"
+                  scale="0.5 0.5 0.5"
+                  position="-0.5 1.5 -1.5"
+                  rotation="0 0 0"
+                  animation-mixer="clip: *; loop: true;">
+        </a-entity>
+        <a-entity gltf-model="material/Fridge.glb"
+                  scale="0.5 0.5 0.5"
+                  position="0.2 1.5 -1.5"
+                  rotation="0 0 0"
+                  animation-mixer="clip: *; loop: true;">
+        </a-entity>
         <a-entity gltf-model="material/Sushi Truck.glb"
-                  scale="0.85 0.85 0.85"
+                  scale="1 1 1"
                   position="-0.5 0 -1"
                   rotation="0 265 0"
-                  animation-mixer="clip: *; loop: true;"
-                  class="clickable"
-                  data-info="สุชิทรัค: รถขายซูชิเคลื่อนที่แบบญี่ปุ่นดั้งเดิม ให้บริการซูชิสดใหม่ตลอดทั้งวัน">
+                  animation-mixer="clip: *; loop: true;">
         </a-entity>
 
+        <!-- Food in Wooden Board -->
+        <a-entity gltf-model="material/Wooden Board.glb"
+                  scale="1 1 1"
+                  position="0.25 1.5 5.8"
+                  rotation="0 0 0"
+                  animation-mixer="clip: *; loop: true;">
+        </a-entity>
+
+        <a-entity gltf-model="material/Salmon Nigiri.glb"
+                  scale="0.5 0.5 0.5"
+                  position="0.15 1.6 5.8"
+                  rotation="0 0 0"
+                  animation-mixer="clip: *; loop: true;"
+                  class="clickable"
+                  data-info="ซูชิแซลมอน: ข้าวปั้นหน้าปลาแซลมอนดิบ รสชาติสดใหม่">
+        </a-entity>
+
+        <a-entity gltf-model="material/Salmon Roll.glb"
+        scale="0.5 0.5 0.5"
+        position="0.55 1.7 5.8"
+        rotation="0 0 0"
+        animation-mixer="clip: *; loop: true;"
+        class="clickable"
+        data-info="แซลมอนโรล: ข้าวห่อสาหร่ายไส้ปลาแซลมอน">
+        </a-entity>
+
+        <!-- Food in Wooden Board -->
+        <a-entity gltf-model="material/Wooden Board.glb"
+                  scale="1 1 1"
+                  position="2 1.5 5.8"
+                  rotation="0 0 0"
+                  animation-mixer="clip: *; loop: true;">
+        </a-entity>
+        
+        <a-entity gltf-model="material/Maguro Nigiri.glb"
+                  scale="0.5 0.5 0.5"
+                  position="2.15 1.65 5.8"
+                  rotation="0 0 0"
+                  animation-mixer="clip: *; loop: true;"
+                  class="clickable"
+                  data-info="ซูชิทูน่า: ข้าวปั้นหน้าปลาทูน่าดิบ รสชาติเข้มข้น">
+        </a-entity>
+
+        <a-entity gltf-model="material/Octopus Nigiri.glb"
+                  scale="0.5 0.5 0.5"
+                  position="1.75 1.65 5.8"
+                  rotation="0 0 0"
+                  animation-mixer="clip: *; loop: true;"
+                  class="clickable"
+                  data-info="ทาโกะนิกิริ: ข้าวปั้นหน้าปลาหมึกต้มสุก นุ่มหนึบ">
+        </a-entity>
+
+        <!-- Food in Wooden Board -->
+        <a-entity gltf-model="material/Wooden Board.glb"
+                  scale="1 1 1"
+                  position="5.5 1.5 5.8"
+                  rotation="0 0 0"
+                  animation-mixer="clip: *; loop: true;">
+        </a-entity>
+        
+        <a-entity gltf-model="material/Ebi Nigiri.glb"
+                  scale="0.5 0.5 0.5"
+                  position="5.75 1.65 5.8"
+                  rotation="0 0 0"
+                  animation-mixer="clip: *; loop: true;"
+                  class="clickable"
+                  data-info="เอบินิกิริ: ข้าวปั้นหน้ากุ้งต้มสุก หวานกรอบ">
+        </a-entity>
+
+        <a-entity gltf-model="material/Onigiri.glb"
+                  scale="0.5 0.5 0.5"
+                  position="5.25 1.65 5.8"
+                  rotation="0 0 0"
+                  animation-mixer="clip: *; loop: true;"
+                  class="clickable"
+                  data-info="โอนิกิริ: ข้าวปั้นสามเหลี่ยมห่อสาหร่าย มีไส้หลากหลาย">
+        </a-entity>
+
+        <!--Food-->
         <a-entity gltf-model="material/Ramen.glb"
                   scale="0.85 0.85 0.85"
-                  position="-0.5 1.5 5.75"
+                  position="-0.8 1.5 5.75"
                   rotation="0 0 0"
                   animation-mixer="clip: *; loop: true;"
                   class="clickable"
                   data-info="ราเมน: บะหมี่ในน้ำซุปญี่ปุ่น มีหลากหลายรสชาติ เช่น โชยุ มิโสะ ทงคตสึ">
         </a-entity>
 
+        <a-entity gltf-model="material/Plate.glb"
+        scale="0.85 0.85 0.85"
+        position="4.5 1.5 5.8"
+        rotation="0 0 0"
+        animation-mixer="clip: *; loop: true;">
+        </a-entity>
+        
+        <a-entity gltf-model="material/Gyoza.glb"
+        scale="0.85 0.85 0.85"
+        position="4.3 1.6 5.8"
+        rotation="0 0 0"
+        animation-mixer="clip: *; loop: true;"
+        class="clickable"
+        data-info="เกี๊ยวซ่า: เกี๊ยวซ่าญี่ปุ่น ไส้หมูผักทอดกรอบด้านล่าง">
+        </a-entity>
+
+        <a-entity gltf-model="material/Tamago Nigiri.glb"
+                  scale="0.5 0.5 0.5"
+                  position="4.6 1.6 5.8"
+                  rotation="0 0 0"
+                  animation-mixer="clip: *; loop: true;"
+                  class="clickable"
+                  data-info="ทามาโกะนิกิริ: ข้าวปั้นหน้าไข่หวาน นุ่มละมุน">
+        </a-entity>
+        
         <a-entity gltf-model="material/Chukaman Steamer.glb"
                   scale="0.85 0.85 0.85"
-                  position="2.5 1.45 5.75"
+                  position="3 1.45 5.75"
                   rotation="0 0 0"
                   animation-mixer="clip: *; loop: true;"
                   class="clickable"
@@ -108,14 +222,24 @@
                   class="clickable"
                   data-info="อุด้ง: เส้นบะหมี่ญี่ปุ่นเส้นใหญ่ ทำจากแป้งสาลี นิยมทานในน้ำซุปร้อนหรือเย็น">
         </a-entity>
+        
+        <a-entity gltf-model="material/Dango.glb"
+                  scale="0.85 0.85 0.85"
+                  position="-3.2 1.65 5.75"
+                  rotation="0 0 0"
+                  animation-mixer="clip: *; loop: true;"
+                  class="clickable"
+                  data-info="ดังโงะ: ขนมญี่ปุ่นทำจากแป้งข้าว เสียบไม้ ราดด้วยซอสหวาน">
+        </a-entity>
 
-        <a-entity gltf-model="material/Counter Straight.glb"
-                  scale="0.75 0.75 0.75"
-                  position="-0.5 0 5"
+        <a-entity gltf-model="material/Plate.glb"
+                  scale="0.85 0.85 0.85"
+                  position="-3 1.5 5.75"
                   rotation="0 0 0"
                   animation-mixer="clip: *; loop: true;">
         </a-entity>
-        
+
+        <!-- Counter -->
         <a-entity gltf-model="material/Counter Straight.glb"
                   scale="0.75 0.75 0.75"
                   position="2 0 5"
@@ -125,11 +249,54 @@
 
         <a-entity gltf-model="material/Counter Straight.glb"
                   scale="0.75 0.75 0.75"
+                  position="5 0 5"
+                  rotation="0 0 0"
+                  animation-mixer="clip: *; loop: true;">
+        </a-entity>
+
+        <a-entity gltf-model="material/Counter Straight.glb"
+                  scale="0.75 0.75 0.75"
+                  position="-0.5 0 5"
+                  rotation="0 0 0"
+                  animation-mixer="clip: *; loop: true;">
+        </a-entity>
+        
+
+        <a-entity gltf-model="material/Counter Straight.glb"
+                  scale="0.75 0.75 0.75"
                   position="-3.5 0 5"
                   rotation="0 0 0"
                   animation-mixer="clip: *; loop: true;">
         </a-entity>
 
+        <!-- Stool -->
+        <a-entity gltf-model="material/Stool.glb"
+        scale="1 1 1"
+        position="-3.5 0 7"
+        rotation="0 0 0"
+        animation-mixer="clip: *; loop: true;">
+        </a-entity>
+        <a-entity gltf-model="material/Stool.glb"
+        scale="1 1 1"
+        position="2 0 7"
+        rotation="0 0 0"
+        animation-mixer="clip: *; loop: true;">
+        </a-entity>
+        <a-entity gltf-model="material/Stool.glb"
+        scale="1 1 1"
+        position="5 0 7"
+        rotation="0 0 0"
+        animation-mixer="clip: *; loop: true;">
+        </a-entity>
+        <a-entity gltf-model="material/Stool.glb"
+        scale="1 1 1"
+        position="-0.5 0 7"
+        rotation="0 0 0"
+        animation-mixer="clip: *; loop: true;">
+        </a-entity>
+        
+        
+        <!-- Characters -->
         <a-entity gltf-model="material/Panda.glb"
                   scale="0.85 0.85 0.85"
                   position="-0.5 0 4"
@@ -139,42 +306,56 @@
                   data-info="แพนด้าน้อย: มาสคอตประจำร้าน คอยต้อนรับลูกค้าด้วยความน่ารัก">
         </a-entity>
 
+        <a-entity gltf-model="material/Rabbit Cyan Hair.glb"
+                  scale="0.6 0.6 0.6"
+                  position="0.75 1.25 -0.25"
+                  rotation="0 0 0"
+                  animation-mixer="clip: *; loop: true;">
+        </a-entity>
+
+
         <a-entity position="0 2 10">
             <a-camera look-controls wasd-controls="acceleration: 100">
                 <a-cursor color="#FF0000" raycaster="objects: .clickable"></a-cursor>
             </a-camera>
         </a-entity>
 
-        <a-light type="ambient" intensity="0.8" color="#ffffff"></a-light>
-        <a-light type="directional" position="2 4 3" intensity="0.7" color="#ffeecc" cast-shadow="true"></a-light>
+        <a-light type="ambient" intensity="0.9" color="#ffffff"></a-light>
+        <a-light type="directional" position="2 4 3" intensity="0.8" color="#ffeecc" cast-shadow="true"></a-light>
+        <a-light type="point" position="0 4 0" intensity="0.4" color="#ff9999"></a-light>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const infoBox = document.getElementById('info-box');
-            const clickableEntities = document.querySelectorAll('.clickable');
-            
-            clickableEntities.forEach(entity => {
-                entity.addEventListener('click', function() {
-                    const info = this.getAttribute('data-info');
-                    if (info) {
-                        infoBox.textContent = info;
-                        infoBox.classList.add('visible');
-                        
-                        setTimeout(() => {
-                            infoBox.classList.remove('visible');
-                        }, 3000);
-                    }
-                });
-
-                entity.addEventListener('mouseenter', function() {
-                    this.setAttribute('scale', '1 1 1');
-                });
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const infoBox = document.getElementById('info-box');
+                const clickableEntities = document.querySelectorAll('.clickable');
                 
-                entity.addEventListener('mouseleave', function() {
-                    this.setAttribute('scale', '0.85 0.85 0.85');
+                clickableEntities.forEach(entity => {
+                    const scale = entity.getAttribute('scale');
+                    const originalX = scale.x;
+                    const originalY = scale.y;
+                    const originalZ = scale.z;
+                    
+                    entity.addEventListener('click', function() {
+                        const info = this.getAttribute('data-info');
+                        if (info) {
+                            infoBox.textContent = info;
+                            infoBox.classList.add('visible');
+                            
+                            setTimeout(() => {
+                                infoBox.classList.remove('visible');
+                            }, 3000);
+                        }
+                    });
+            
+                    entity.addEventListener('mouseenter', function() {
+                        this.setAttribute('scale', '1 1 1');
+                    });
+                    
+                    entity.addEventListener('mouseleave', function() {
+                        this.setAttribute('scale', `${originalX} ${originalY} ${originalZ}`);
+                    });
                 });
             });
-        });
-    </script>
+            </script>
 </body>
 </html>
