@@ -94,7 +94,6 @@
         <button id="toggleMusic" class="music-btn">🎵 เปิดเพลง</button>
     </div>
 
-    <!--Test-->
     <a-scene cursor="rayOrigin: mouse">
         <a-entity environment="preset: japan;"></a-entity>
         
@@ -109,6 +108,39 @@
         animation="property: position; to: 0.5 9.5 -1; dir: alternate; dur: 3000; loop: true; easing: easeInOutSine">
         </a-text>   
         
+        <a-entity
+            position="7 1 -1"
+            rotation="0 340 0">
+            <a-box
+                width="2.5"
+                height="6"
+                depth="0.2"
+                material="color: #a0370a; metalness: 0.2; roughness: 0.2;">
+            </a-box>
+            <a-text
+                value="Japanese"
+                position="-1 2 0.1"
+                scale="2 2 2"
+                color="#FFF"
+                font="https://cdn.aframe.io/fonts/DejaVu-sdf.fnt">
+            </a-text>
+            <a-text
+                value="Food"
+                position="-0.5 1.5 0.1"
+                scale="2 2 2"
+                color="#FFF"
+                font="https://cdn.aframe.io/fonts/DejaVu-sdf.fnt">
+            </a-text>
+            <a-text
+                value="Truck"
+                position="-0.65 1 0.1"
+                scale="2 2 2"
+                color="#FFF"
+                font="https://cdn.aframe.io/fonts/DejaVu-sdf.fnt">
+            </a-text>
+        </a-entity>
+
+
         <a-entity gltf-model="material/Can Fridge.glb"
                   scale="0.5 0.5 0.5"
                   position="-0.5 1.5 -1.5"
@@ -349,6 +381,7 @@
                   animation-mixer="clip: *; loop: true;">
         </a-entity>
 
+<<<<<<< HEAD
         <a-entity gltf-model="material/warrok_dance.glb"
                   scale="1.5 1.5 1.5"
                   position="5 0 10"
@@ -358,6 +391,35 @@
                   data-info="วอร์ลอร์ดหมาป่า : ลูกค้าประจำร้านซูชิ">
         </a-entity>
 
+=======
+        <a-entity gltf-model="material/Business Man.glb"
+                  scale="2.5 2.5 2.5"
+                  position="20 0 8"
+                  rotation="0 200 0"
+                  animation-mixer="clip: *; loop: true;">
+        </a-entity>
+
+        <a-entity gltf-model="material/Farmer.glb"
+                  scale="2.5 2.5 2.5"
+                  position="-15 0 8"
+                  rotation="0 80 0"
+                  animation-mixer="clip: *; loop: true;">
+        </a-entity>
+
+        <a-entity gltf-model="material/RV.glb"
+                  scale="2.5 2.5 2.5"
+                  position="-25 -1 -10"
+                  rotation="0 0 0"
+                  animation-mixer="clip: *; loop: true;">
+        </a-entity>
+
+        <a-entity gltf-model="material/Tent.glb"
+                  scale="0.5 0.5 0.5"
+                  position="20 -1 -10"
+                  rotation="0 60 0"
+                  animation-mixer="clip: *; loop: true;">
+        </a-entity>
+>>>>>>> 9ca534e1911eec5f296be0178f258a3215457af5
 
         <a-entity position="0 2 10">
             <a-camera look-controls wasd-controls="acceleration: 100">
@@ -369,7 +431,154 @@
         <a-light type="directional" position="2 4 3" intensity="0.8" color="#ffeecc" cast-shadow="true"></a-light>
         <a-light type="point" position="0 4 0" intensity="0.4" color="#ff9999"></a-light>
 
+<<<<<<< HEAD
         <!--Show information when clicked-->
+=======
+
+        <!-- โต๊ะ -->
+        <a-entity gltf-model="material/Table.glb"
+        scale="1 1 1"
+        position="-10 0 15"
+        rotation="0 180 0"
+        animation-mixer="clip: *; loop: true;">     
+        </a-entity>
+
+        <!-- เก้าอี้ตัวที่ 1 -->
+        <a-entity gltf-model="material/Bench.glb"
+        scale="0.75 0.75 0.75"
+        position="-12 0 15"
+        rotation="0 180 0"
+        animation-mixer="clip: *; loop: true;"> 
+        </a-entity>
+
+        <!-- กระต่ายบนเก้าอี้ตัวที่ 1 -->
+        <a-entity gltf-model="material/Rabbit.glb"
+        scale="0.5 0.5 0.5"
+        position="-12 0.5 15"
+        rotation="0 90 0"
+        animation-mixer="clip: *; loop: true;">
+        </a-entity>
+
+        <!-- เก้าอี้ตัวที่ 2 -->
+        <a-entity gltf-model="material/Bench.glb"
+        scale="0.75 0.75 0.75"
+        position="-8 0 15"
+        rotation="0 180 0"
+        animation-mixer="clip: *; loop: true;"> 
+        </a-entity>
+
+        <!-- กระต่ายบนเก้าอี้ตัวที่ 2 -->
+        <a-entity gltf-model="material/Rabbit.glb"
+        scale="0.5 0.5 0.5"
+        position="-8 0.5 15"
+        rotation="0 270 0"
+        animation-mixer="clip: *; loop: true;">
+        </a-entity>
+
+        <!-- ขวดของกระต่ายตัวที่ 1 -->
+        <a-entity gltf-model="material/Bottle.glb"
+        scale="0.6 0.6 0.6"
+        position="-10.5 1.5 15.3" 
+        rotation="0 0 0"
+        animation-mixer="clip: *; loop: true;">
+        </a-entity>
+
+        <!-- ขวดของกระต่ายตัวที่ 2 -->
+        <a-entity gltf-model="material/Bottle.glb"
+        scale="0.6 0.6 0.6"
+        position="-9.5 1.5 15.3" 
+        rotation="0 0 0"
+        animation-mixer="clip: *; loop: true;">
+
+        </a-entity>
+        <a-entity gltf-model="material/Ramen.glb"
+        scale="0.6 0.6 0.6"
+        position="-9.5 1.5 15" 
+        rotation="0 0 0"
+        animation-mixer="clip: *; loop: true;">
+
+        </a-entity>
+        <a-entity gltf-model="material/Chukaman Steamer.glb"
+        scale="0.6 0.6 0.6"
+        position="-10.5 1.5 15" 
+        rotation="0 0 0"
+        animation-mixer="clip: *; loop: true;">
+        </a-entity>
+
+
+        <!-- โต๊ะ -->
+        <a-entity gltf-model="material/Table.glb"
+        scale="1 1 1"
+        position="10 0 15"
+        rotation="0 180 0"
+        animation-mixer="clip: *; loop: true;">     
+        </a-entity>
+
+        <!-- เก้าอี้ตัวที่ 1 -->
+        <a-entity gltf-model="material/Bench.glb"
+        scale="0.75 0.75 0.75"
+        position="12 0.25 15"
+        rotation="0 180 0"
+        animation-mixer="clip: *; loop: true;"> 
+        </a-entity>
+
+        <!-- กระต่ายบนเก้าอี้ตัวที่ 1 -->
+        <a-entity gltf-model="material/Rabbit.glb"
+        scale="0.5 0.5 0.5"
+        position="12 0.75 15"
+        rotation="0 260 0"
+        animation-mixer="clip: *; loop: true;">
+        </a-entity>
+
+        <!-- เก้าอี้ตัวที่ 2 -->
+        <a-entity gltf-model="material/Bench.glb"
+        scale="0.75 0.75 0.75"
+        position="8 0.25 15"
+        rotation="0 180 0"
+        animation-mixer="clip: *; loop: true;"> 
+        </a-entity>
+
+        <!-- กระต่ายบนเก้าอี้ตัวที่ 2 -->
+        <a-entity gltf-model="material/Rabbit.glb"
+        scale="0.5 0.5 0.5"
+        position="8 0.75 15"
+        rotation="0 90 0"
+        animation-mixer="clip: *; loop: true;">
+        </a-entity>
+
+        <!-- ขวดของกระต่ายตัวที่ 1 -->
+        <a-entity gltf-model="material/Bottle.glb"
+        scale="0.6 0.6 0.6"
+        position="10.5 1.5 15.3" 
+        rotation="0 0 0"
+        animation-mixer="clip: *; loop: true;">
+        </a-entity>
+
+        <!-- ขวดของกระต่ายตัวที่ 2 -->
+        <a-entity gltf-model="material/Bottle.glb"
+        scale="0.6 0.6 0.6"
+        position="9.5 1.5 15.3" 
+        rotation="0 0 0"
+        animation-mixer="clip: *; loop: true;">
+
+        </a-entity>
+        <a-entity gltf-model="material/Ramen.glb"
+        scale="0.6 0.6 0.6"
+        position="9.5 1.5 15" 
+        rotation="0 0 0"
+        animation-mixer="clip: *; loop: true;">
+
+        </a-entity>
+        <a-entity gltf-model="material/Chukaman Steamer.glb"
+        scale="0.6 0.6 0.6"
+        position="10.5 1.5 15" 
+        rotation="0 0 0"
+        animation-mixer="clip: *; loop: true;">
+        </a-entity>
+
+    </a-scene>
+        
+>>>>>>> 9ca534e1911eec5f296be0178f258a3215457af5
         <script>
             document.addEventListener('DOMContentLoaded', function() {
                 const infoBox = document.getElementById('info-box');
@@ -421,6 +630,5 @@
             });
             </script>
 
-<!--Comment by mew-->
 </body>
 </html>
