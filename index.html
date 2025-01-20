@@ -323,7 +323,28 @@
         <a-light type="ambient" intensity="0.9" color="#ffffff"></a-light>
         <a-light type="directional" position="2 4 3" intensity="0.8" color="#ffeecc" cast-shadow="true"></a-light>
         <a-light type="point" position="0 4 0" intensity="0.4" color="#ff9999"></a-light>
+<!-- ploy -->
+<a-scene cursor="rayOrigin: mouse">
+    <!-- ตั้งค่าฉากเป็น preset: japan -->
+    <a-entity environment="preset: japan;"></a-entity>
 
+<a-entity gltf-model="material/Rabbit.glb"
+                  scale="0.5 0.5 0.5"
+                  position="-3.5 0.5 7"
+                  rotation="0 0 0"
+                  animation-mixer="clip: *; loop: true;">
+        </a-entity>
+        <a-entity position="0 2 10">
+            <a-camera look-controls wasd-controls="acceleration: 100">
+                <a-cursor color="#FF0000" raycaster="objects: .clickable"></a-cursor>
+            </a-camera>
+        </a-entity>
+    
+        <a-light type="ambient" intensity="0.9" color="#ffffff"></a-light>
+        <a-light type="directional" position="2 4 3" intensity="0.8" color="#ffeecc" cast-shadow="true"></a-light>
+        <a-light type="point" position="0 4 0" intensity="0.4" color="#ff9999"></a-light>
+    </a-scene>   
+<!-- จบ -->
         <script>
             document.addEventListener('DOMContentLoaded', function() {
                 const infoBox = document.getElementById('info-box');
