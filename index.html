@@ -54,15 +54,50 @@
             opacity: 1;
             transform: translateX(-50%) translateY(10px);
         }
+    
+        .music-control {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+
+        .music-btn {
+            background: rgba(255, 255, 255, 0.2);
+            border: 2px solid #FFD700;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: 'Noto Sans Thai', sans-serif;
+            min-width: 120px;
+        }
+
+        .music-btn:hover {
+            background: rgba(255, 215, 0, 0.3);
+            transform: scale(1.05);
+        }
+
+        .music-btn.playing {
+            background: rgba(255, 215, 0, 0.5);
+        }
     </style>
 </head>
 
 <body>
     <div id="info-box" class="info-box">คลิกที่วัตถุเพื่อดูข้อมูล</div>
     <div class="instruction-box">👆 เลือกคลิกที่อาหาร เพื่อดูคำอธิบายเพิ่มเติม  </div>
+        
+    <div class="music-control">
+        <button id="toggleMusic" class="music-btn">🎵 เปิดเพลง</button>
+    </div>
+
     <!--Test-->
     <a-scene cursor="rayOrigin: mouse">
         <a-entity environment="preset: japan;"></a-entity>
+        
+        <a-entity id="music" sound="src: material/Sound.mp3 ; autoplay: false; loop: true;"></a-entity>
 
         <a-text value="Welcome to Japan"
         position="0.5 9 -1"
@@ -355,6 +390,23 @@
                         this.setAttribute('scale', `${originalX} ${originalY} ${originalZ}`);
                     });
                 });
+            });
+
+            const toggleBtn = document.getElementById('toggleMusic');
+            const musicEntity = document.getElementById('music');
+            let isPlaying = false;
+
+            toggleBtn.addEventListener('click', function() {
+                if (!isPlaying) {
+                    musicEntity.components.sound.playSound();
+                    toggleBtn.textContent = '⏹ ปิดเพลง';
+                    toggleBtn.classList.add('playing');
+                } else {
+                    musicEntity.components.sound.stopSound();
+                    toggleBtn.textContent = '🎵 เปิดเพลง';
+                    toggleBtn.classList.remove('playing');
+                }
+                isPlaying = !isPlaying;
             });
             </script>
 
