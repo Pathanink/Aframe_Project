@@ -93,7 +93,6 @@
         <button id="toggleMusic" class="music-btn">🎵 เปิดเพลง</button>
     </div>
 
-    <!--Test-->
     <a-scene cursor="rayOrigin: mouse">
         <a-entity environment="preset: japan;"></a-entity>
         
@@ -108,6 +107,39 @@
         animation="property: position; to: 0.5 9.5 -1; dir: alternate; dur: 3000; loop: true; easing: easeInOutSine">
         </a-text>   
         
+        <a-entity
+            position="7 1 -1"
+            rotation="0 340 0">
+            <a-box
+                width="2.5"
+                height="6"
+                depth="0.2"
+                material="color: #a0370a; metalness: 0.2; roughness: 0.2;">
+            </a-box>
+            <a-text
+                value="Japanese"
+                position="-1 2 0.1"
+                scale="2 2 2"
+                color="#FFF"
+                font="https://cdn.aframe.io/fonts/DejaVu-sdf.fnt">
+            </a-text>
+            <a-text
+                value="Food"
+                position="-0.5 1.5 0.1"
+                scale="2 2 2"
+                color="#FFF"
+                font="https://cdn.aframe.io/fonts/DejaVu-sdf.fnt">
+            </a-text>
+            <a-text
+                value="Truck"
+                position="-0.65 1 0.1"
+                scale="2 2 2"
+                color="#FFF"
+                font="https://cdn.aframe.io/fonts/DejaVu-sdf.fnt">
+            </a-text>
+        </a-entity>
+
+
         <a-entity gltf-model="material/Can Fridge.glb"
                   scale="0.5 0.5 0.5"
                   position="-0.5 1.5 -1.5"
@@ -348,7 +380,6 @@
                   animation-mixer="clip: *; loop: true;">
         </a-entity>
 
-
         <a-entity position="0 2 10">
             <a-camera look-controls wasd-controls="acceleration: 100">
                 <a-cursor color="#FF0000" raycaster="objects: .clickable"></a-cursor>
@@ -455,6 +486,5 @@ animation-mixer="clip: *; loop: true;">
             });
             </script>
 
-<!--Comment by mew-->
 </body>
 </html>
