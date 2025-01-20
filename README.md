@@ -1,6 +1,9 @@
 # Aframe Project
+### This project was developed for the midterm project of SC401202 only.
 ## Overviews
-This project was developed for the midterm project of SC401202 only.
+
+A virtual 3D experience showcasing Japanese food, where users can click on items like sushi and ramen to learn more, with music control for added immersion.
+
 ## Members
 1. 653380205-4 นายปธานิน คูหาทอง CS
 2. 653380216-9 นางสาวสุชญา พานสมภพ CS
