@@ -1,5 +1,6 @@
 # Aframe Project
-
+## Overviews
+This project was developed for the midterm project of SC401202 only.
 ## Members
 1. 653380205-4 นายปธานิน คูหาทอง CS
 2. 653380216-9 นางสาวสุชญา พานสมภพ CS
