@@ -395,10 +395,14 @@
             
                     entity.addEventListener('mouseenter', function() {
                         this.setAttribute('scale', '1 1 1');
+                        // Trigger animation
+                        this.setAttribute('animation-mixer', 'clip: *; loop: true;');
                     });
                     
                     entity.addEventListener('mouseleave', function() {
-                        this.setAttribute('scale', `${originalX} ${originalY} ${originalZ}`);
+                        this.setAttribute('scale', `${originalX} ${originalY} ${originalZ}`); // Reset scale
+                     // Stop animation by removing the animation-mixer attribute
+                        this.removeAttribute('animation-mixer');
                     });
                 });
             });
