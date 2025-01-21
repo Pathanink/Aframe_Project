@@ -115,6 +115,8 @@
                 width="2.5"
                 height="6"
                 depth="0.2"
+                class="clickable"
+                data-info="ป้ายร้าน: ป้ายร้านอาหารญี่ปุ่น แซ่บๆๆๆๆ"
                 material="color: #a0370a; metalness: 0.2; roughness: 0.2;">
             </a-box>
             <a-text
@@ -144,17 +146,23 @@
         <a-entity gltf-model="material/Can Fridge.glb"
                   scale="0.5 0.5 0.5"
                   position="-0.5 1.5 -1.5"
-                  rotation="0 0 0">
+                  rotation="0 0 0"
+                  class="clickable"
+                  data-info="ตู้น้ำลำไย: มีน้อยเพราะพนักงานแอบกิน">
         </a-entity>
         <a-entity gltf-model="material/Fridge.glb"
                   scale="0.5 0.5 0.5"
                   position="0.2 1.5 -1.5"
-                  rotation="0 0 0">
+                  rotation="0 0 0"
+                  class="clickable"
+                  data-info="ตู้เย็นเก็บอาหาร: วัตถุดิบสดใหม่หรอ">
         </a-entity>
         <a-entity gltf-model="material/Sushi Truck.glb"
                   scale="1 1 1"
                   position="-0.5 0 -1"
-                  rotation="0 265 0">
+                  rotation="0 265 0"
+                  class="clickable"
+                  data-info="รถขายอาหาร: ไม่ขายอาหารแต่ขายรถ">
         </a-entity>
 
         <a-entity gltf-model="material/Wooden Board.glb"
@@ -377,11 +385,13 @@
           data-clip="CharacterArmature|Wave">
         </a-entity>
 
-<a-assets>
-    <a-asset-item id="warrokModel" src="material/warrok_dance.glb"></a-asset-item>
-</a-assets>
-
-<a-entity id="warrok" position="-8 0 1" scale="2.5 2.5 2.5" gltf-model="#warrokModel" animation-mixer></a-entity>
+        <a-entity gltf-model="material/warrok_dance.glb"
+            scale="2.5 2.5 2.5"
+            position="-8 0 1"
+            rotation="0 0 0"
+            animation-mixer="clip: *; loop: true;">
+            
+        </a-entity>
 
         <a-entity gltf-model="material/Farmer.glb"
                   scale="2.5 2.5 2.5"
@@ -396,25 +406,33 @@
         <a-entity gltf-model="material/RV.glb"
                   scale="2.5 2.5 2.5"
                   position="-25 -1 -10"
-                  rotation="0 0 0">
+                  rotation="0 0 0"
+                  class="clickable"
+                  data-info="รถบ้าน: นอนทั้งวันไม่ออกมาสักที">
         </a-entity>
 
         <a-entity gltf-model="material/House.glb"
                   scale="10 10 10"
                   position="25 0.25 40"
-                  rotation="0 0 0">
+                  rotation="0 0 0"
+                  class="clickable"
+                  data-info="บ้านกระต่าย: บ้านกระต่ายติดจำนองธนาคาร">
         </a-entity>
 
         <a-entity gltf-model="material/House (1).glb"
                   scale="10 10 10"
                   position="-25 0.25 40"
-                  rotation="0 80 0">
+                  rotation="0 80 0"
+                  class="clickable"
+                  data-info="บ้านกระต่าย: บ้านเจ้าของร้านก็ติดจำนองเหมือนกัน">
         </a-entity>
 
         <a-entity gltf-model="material/Tent.glb"
                   scale="0.5 0.5 0.5"
                   position="20 -1 -10"
-                  rotation="0 60 0">
+                  rotation="0 60 0"
+                  class="clickable"
+                  data-info="เต็นท์: มีไว้เฉยๆไม่มีอะไร">
         </a-entity>
 
         <a-entity gltf-model="material/Table.glb"
